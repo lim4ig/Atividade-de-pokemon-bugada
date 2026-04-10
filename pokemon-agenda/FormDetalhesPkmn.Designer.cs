@@ -35,6 +35,8 @@ namespace pokemon_agenda
             this.lbNome = new System.Windows.Forms.Label();
             this.lbTipo = new System.Windows.Forms.Label();
             this.lbNivel = new System.Windows.Forms.Label();
+            this.lbVida = new System.Windows.Forms.Label();
+            this.lbDano = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagemPokedex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +79,33 @@ namespace pokemon_agenda
             this.lbNivel.TabIndex = 3;
             this.lbNivel.Text = "Nível";
             // 
+            // lbVida
+            // 
+            this.lbVida.AutoSize = true;
+            this.lbVida.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVida.Location = new System.Drawing.Point(7, 309);
+            this.lbVida.Name = "lbVida";
+            this.lbVida.Size = new System.Drawing.Size(55, 25);
+            this.lbVida.TabIndex = 4;
+            this.lbVida.Text = "Vida";
+            // 
+            // lbDano
+            // 
+            this.lbDano.AutoSize = true;
+            this.lbDano.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDano.Location = new System.Drawing.Point(7, 334);
+            this.lbDano.Name = "lbDano";
+            this.lbDano.Size = new System.Drawing.Size(63, 25);
+            this.lbDano.TabIndex = 5;
+            this.lbDano.Text = "Dano";
+            // 
             // FormDetalhesPkmn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 450);
+            this.Controls.Add(this.lbDano);
+            this.Controls.Add(this.lbVida);
             this.Controls.Add(this.lbNivel);
             this.Controls.Add(this.lbTipo);
             this.Controls.Add(this.lbNome);
@@ -107,5 +131,7 @@ namespace pokemon_agenda
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.Label lbTipo;
         private System.Windows.Forms.Label lbNivel;
+        private System.Windows.Forms.Label lbVida;
+        private System.Windows.Forms.Label lbDano;
     }
 }

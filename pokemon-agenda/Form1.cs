@@ -81,8 +81,6 @@ namespace pokemon_agenda
 
                 Pokemon pkmnSelecionado = (Pokemon)dgvListaPokemon.CurrentRow.DataBoundItem;
 
-                pkmnSelecionado.fnDescricao();
-
                 FormDetalhesPkmn formDetalhes = new FormDetalhesPkmn();
                 formDetalhes.pkmnRecebido = pkmnSelecionado;
 
