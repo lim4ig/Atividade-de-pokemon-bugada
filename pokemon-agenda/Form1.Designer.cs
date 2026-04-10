@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAjuda = new System.Windows.Forms.Button();
+            this.btnTreinar = new System.Windows.Forms.Button();
             this.dgvListaPokemon = new System.Windows.Forms.DataGridView();
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -192,20 +192,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnAjuda
+            // btnTreinar
             // 
-            this.btnAjuda.Location = new System.Drawing.Point(18, 415);
-            this.btnAjuda.Name = "btnAjuda";
-            this.btnAjuda.Size = new System.Drawing.Size(75, 23);
-            this.btnAjuda.TabIndex = 8;
-            this.btnAjuda.Text = "Ajuda";
-            this.btnAjuda.UseVisualStyleBackColor = true;
-            this.btnAjuda.Click += new System.EventHandler(this.btnAjuda_Click);
+            this.btnTreinar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTreinar.Location = new System.Drawing.Point(580, 306);
+            this.btnTreinar.Name = "btnTreinar";
+            this.btnTreinar.Size = new System.Drawing.Size(183, 34);
+            this.btnTreinar.TabIndex = 8;
+            this.btnTreinar.Text = "Treinar";
+            this.btnTreinar.UseVisualStyleBackColor = true;
+            this.btnTreinar.Click += new System.EventHandler(this.btnAjuda_Click);
             // 
             // dgvListaPokemon
             // 
             this.dgvListaPokemon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvListaPokemon.BackgroundColor = System.Drawing.Color.Black;
+            this.dgvListaPokemon.BackgroundColor = System.Drawing.Color.LightGray;
             this.dgvListaPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListaPokemon.Location = new System.Drawing.Point(369, 100);
             this.dgvListaPokemon.Name = "dgvListaPokemon";
@@ -216,9 +217,9 @@
             // btnVisualizar
             // 
             this.btnVisualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVisualizar.Location = new System.Drawing.Point(369, 307);
+            this.btnVisualizar.Location = new System.Drawing.Point(369, 306);
             this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(219, 34);
+            this.btnVisualizar.Size = new System.Drawing.Size(183, 34);
             this.btnVisualizar.TabIndex = 9;
             this.btnVisualizar.Text = "Visualizar detalhes";
             this.btnVisualizar.UseVisualStyleBackColor = true;
@@ -231,13 +232,13 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.dgvListaPokemon);
-            this.Controls.Add(this.btnAjuda);
+            this.Controls.Add(this.btnTreinar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbTituloAgenda);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fmCadastroPokemon";
-            this.Text = "Agenda Pokémon";
+            this.Text = " ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNivel)).EndInit();
@@ -261,7 +262,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.NumericUpDown numNivel;
         private System.Windows.Forms.ComboBox cbTipo;
-        private System.Windows.Forms.Button btnAjuda;
+        private System.Windows.Forms.Button btnTreinar;
         private System.Windows.Forms.DataGridView dgvListaPokemon;
         private System.Windows.Forms.Button btnVisualizar;
     }
