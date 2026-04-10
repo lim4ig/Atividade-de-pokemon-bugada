@@ -24,6 +24,10 @@ namespace pokemon_agenda
             lbNome.Text = "Nome: " + pkmnRecebido.NomePkmn;
             lbTipo.Text = "Tipo: " + pkmnRecebido.TipoPkmn;
             lbNivel.Text = "Nível: " + pkmnRecebido.NivelPkmn.ToString();
+
+            pbImagemPokedex.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
         }
     }
 }

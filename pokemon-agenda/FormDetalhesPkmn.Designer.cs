@@ -1,4 +1,6 @@
-﻿namespace pokemon_agenda
+﻿using System;
+
+namespace pokemon_agenda
 {
     partial class FormDetalhesPkmn
     {
@@ -43,6 +45,7 @@
             this.pbImagemPokedex.Size = new System.Drawing.Size(309, 217);
             this.pbImagemPokedex.TabIndex = 0;
             this.pbImagemPokedex.TabStop = false;
+            this.pbImagemPokedex.Click += new System.EventHandler(this.pbImagemPokedex_Click);
             // 
             // lbNome
             // 
@@ -91,6 +94,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void pbImagemPokedex_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
