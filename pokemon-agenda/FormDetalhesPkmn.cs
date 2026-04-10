@@ -27,6 +27,8 @@ namespace pokemon_agenda
 
             pbImagemPokedex.SizeMode = PictureBoxSizeMode.StretchImage;
 
+            pbImagemPokedex.Load(pkmnRecebido.fnLinkImg());
+
 
         }
     }

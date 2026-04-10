@@ -201,7 +201,7 @@
             this.btnTreinar.TabIndex = 8;
             this.btnTreinar.Text = "Treinar";
             this.btnTreinar.UseVisualStyleBackColor = true;
-            this.btnTreinar.Click += new System.EventHandler(this.btnAjuda_Click);
+            this.btnTreinar.Click += new System.EventHandler(this.btnTreinar_Click);
             // 
             // dgvListaPokemon
             // 

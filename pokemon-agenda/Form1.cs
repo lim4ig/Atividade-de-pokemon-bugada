@@ -72,11 +72,6 @@ namespace pokemon_agenda
             fnLimparFormularios();
         }
 
-        private void btnAjuda_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
             // Pegar a linha selecionada do Data Grid View, convertendo-a para o tipo "Pokemon"
@@ -110,6 +105,17 @@ namespace pokemon_agenda
             dgvListaPokemon.Columns["NivelPkmn"].HeaderText = "Nível";
             dgvListaPokemon.Columns["VidaPkmn"].HeaderText = "Vida";
             dgvListaPokemon.Columns["DanoPkmn"].HeaderText = "Ataque";
+        }
+
+        private void btnTreinar_Click(object sender, EventArgs e)
+        {
+            if (dgvListaPokemon.CurrentRow != null)
+            {
+                Pokemon pkmnParaTreinar = (Pokemon)dgvListaPokemon.CurrentRow.DataBoundItem;
+                pkmnParaTreinar.fnTreinar();
+                dgvListaPokemon.Refresh();
+                MessageBox.Show($"O Pokemon {pkmnParaTreinar.NomePkmn} subiu 1 nivel", "Alerta de treinamento");
+            }
         }
     }
 }

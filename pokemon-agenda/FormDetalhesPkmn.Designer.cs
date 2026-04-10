@@ -42,7 +42,7 @@ namespace pokemon_agenda
             // 
             this.pbImagemPokedex.Location = new System.Drawing.Point(12, 12);
             this.pbImagemPokedex.Name = "pbImagemPokedex";
-            this.pbImagemPokedex.Size = new System.Drawing.Size(309, 217);
+            this.pbImagemPokedex.Size = new System.Drawing.Size(381, 217);
             this.pbImagemPokedex.TabIndex = 0;
             this.pbImagemPokedex.TabStop = false;
             this.pbImagemPokedex.Click += new System.EventHandler(this.pbImagemPokedex_Click);
