@@ -47,7 +47,7 @@ namespace pokemon_agenda
         {
             string nomePokemon = txtNome.Text;
             string tipoPokemon = cbTipo.Text;
-            int nivelPokemon = (int)numNivel.Value;
+            int nivelPokemon = (int)numNivel.Value; 
 
             Pokemon novoPokemon = new Pokemon(nomePokemon, tipoPokemon, nivelPokemon);
             if(nomePokemon != string.Empty && tipoPokemon != string.Empty)
@@ -114,6 +114,11 @@ namespace pokemon_agenda
                 dgvListaPokemon.Refresh();
                 MessageBox.Show($"O Pokemon {pkmnParaTreinar.NomePkmn} subiu 1 nivel", "Alerta de treinamento");
             }
+        }
+
+        private void dgvListaPokemon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
